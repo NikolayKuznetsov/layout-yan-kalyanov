@@ -1,0 +1,32 @@
+.block-1 {
+  background-image: url("../images/block-1-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 140px;
+  padding-left: 230px;
+  h2 {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 100px;
+  }
+  h3 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 40px 0;
+  }
+  p {
+    font-size: 19px;
+    line-height: 28px;
+    margin: 0 0 28px 0;
+  }
+  .desc {
+    width: 485px;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+  }
+  .group-arrow {
+    margin-bottom: 50px;
+  }
+}

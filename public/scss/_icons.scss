@@ -1,0 +1,11 @@
+.icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  $iconArrowRightWhite24: '../images/icon-arrow-white-right-o24.png';
+  &.icon-arrow-right-white {
+    background-image: url($iconArrowRightWhite24);
+    width: 11px;
+    height: 19px;
+  }
+}
