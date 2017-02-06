@@ -2,7 +2,7 @@
 @import "mixins/mixins";
 
 .block-1 {
-  //background-image: url("../images/block-1-bg.jpg");
+  background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: $colorWhite;
@@ -33,5 +33,86 @@
   }
   .group-arrow {
     margin-bottom: 50px;
+  }
+}
+
+.block-2 {
+  background-image: url("../images/block-2-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: $coloNero;
+  height: 404px;
+  .title-block {
+    background-color: $colorBlack;
+    padding: 34px 36px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: $colorWhite;
+    width: 948px;
+    height: 125px;
+    float: right;
+    span {
+      float: left;
+      margin: 0 50px 0 0;
+    }
+    .icon {
+      float: left;
+      margin: 20px 0;
+    }
+  }
+  ul {
+    &.menu-section {
+      margin: 50px 225px 0 0;
+      float: right;
+      li {
+        width: 148px;
+        height: 174px;
+        float: left;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          background-color: $colorBlack;
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 148px;
+          height: 148px;
+          @include transition(background-color .4s ease);
+          span {
+            visibility: hidden;
+            opacity: 0;
+            margin-top: 0;
+            max-height: 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $colorWhite;
+            line-height: 100%;
+            @include transition(visibility .4s ease);
+            @include transition(opacity .4s ease);
+            @include transition(margin-top .4s ease);
+          }
+          &:hover {
+            background-color: $colorBlue;
+            height: 174px;
+            @include transition(background-color .4s ease);
+            span {
+              visibility: visible;
+              opacity: 1;
+              max-height: inherit;
+              margin-top: 28px;
+              @include transition(visibility .4s ease);
+              @include transition(opacity .4s ease);
+              @include transition(margin-top .4s ease);
+            }
+          }
+        }
+      }
+    }
   }
 }

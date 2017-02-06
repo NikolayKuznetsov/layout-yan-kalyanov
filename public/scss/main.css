@@ -35,6 +35,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a, a:hover {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Roboto Condensed';
@@ -205,6 +211,42 @@ table {
     background-image: url("../images/icon-logo-arrow-left.png");
     width: 11px;
     height: 19px; }
+  .icon.icon-arrow-blue-right {
+    background-image: url("../images/icon-arrow-blue-right.png");
+    width: 11px;
+    height: 19px; }
+  .icon.icon-microphone {
+    background-image: url("../images/icon-microphone.png");
+    width: 26px;
+    height: 38px; }
+  .icon.icon-microphone.hover, a:hover .icon.icon-microphone {
+    background-image: url("../images/icon-microphone-hover.png");
+    width: 34px;
+    height: 46px; }
+  .icon.icon-stemware {
+    background-image: url("../images/icon-stemware.png");
+    width: 30px;
+    height: 39px; }
+  .icon.icon-stemware.hover, a:hover .icon.icon-stemware {
+    background-image: url("../images/icon-stemware-hover.png");
+    width: 38px;
+    height: 47px; }
+  .icon.icon-users {
+    background-image: url("../images/icon-users.png");
+    width: 52px;
+    height: 35px; }
+  .icon.icon-users.hover, a:hover .icon.icon-users {
+    background-image: url("../images/icon-users-hover.png");
+    width: 60px;
+    height: 43px; }
+  .icon.icon-snowflake {
+    background-image: url("../images/icon-snowflake.png");
+    width: 39px;
+    height: 39px; }
+  .icon.icon-snowflake.hover, a:hover .icon.icon-snowflake {
+    background-image: url("../images/icon-snowflake-hover.png");
+    width: 47px;
+    height: 47px; }
   .icon.logo {
     background-image: url("../images/logo.png");
     width: 232px;
@@ -549,6 +591,7 @@ table {
     color: #FFFFFF; }
 
 .block-1 {
+  background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
@@ -575,6 +618,115 @@ table {
     margin: 0 0 30px 0; }
   .block-1 .group-arrow {
     margin-bottom: 50px; }
+
+.block-2 {
+  background-image: url("../images/block-2-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #161616;
+  height: 404px; }
+  .block-2 .title-block {
+    background-color: #000000;
+    padding: 34px 36px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: 948px;
+    height: 125px;
+    float: right; }
+    .block-2 .title-block span {
+      float: left;
+      margin: 0 50px 0 0; }
+    .block-2 .title-block .icon {
+      float: left;
+      margin: 20px 0; }
+  .block-2 ul.menu-section {
+    margin: 50px 225px 0 0;
+    float: right; }
+    .block-2 ul.menu-section li {
+      width: 148px;
+      height: 174px;
+      float: left;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .block-2 ul.menu-section li a {
+        background-color: #000000;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 148px;
+        height: 148px;
+        -webkit-transition: background-color 0.4s ease;
+        -khtml-transition: background-color 0.4s ease;
+        -moz-transition: background-color 0.4s ease;
+        -ms-transition: background-color 0.4s ease;
+        -o-transition: background-color 0.4s ease;
+        transition: background-color 0.4s ease; }
+        .block-2 ul.menu-section li a span {
+          visibility: hidden;
+          opacity: 0;
+          margin-top: 0;
+          max-height: 0;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          line-height: 100%;
+          -webkit-transition: visibility 0.4s ease;
+          -khtml-transition: visibility 0.4s ease;
+          -moz-transition: visibility 0.4s ease;
+          -ms-transition: visibility 0.4s ease;
+          -o-transition: visibility 0.4s ease;
+          transition: visibility 0.4s ease;
+          -webkit-transition: opacity 0.4s ease;
+          -khtml-transition: opacity 0.4s ease;
+          -moz-transition: opacity 0.4s ease;
+          -ms-transition: opacity 0.4s ease;
+          -o-transition: opacity 0.4s ease;
+          transition: opacity 0.4s ease;
+          -webkit-transition: margin-top 0.4s ease;
+          -khtml-transition: margin-top 0.4s ease;
+          -moz-transition: margin-top 0.4s ease;
+          -ms-transition: margin-top 0.4s ease;
+          -o-transition: margin-top 0.4s ease;
+          transition: margin-top 0.4s ease; }
+        .block-2 ul.menu-section li a:hover {
+          background-color: #0936F4;
+          height: 174px;
+          -webkit-transition: background-color 0.4s ease;
+          -khtml-transition: background-color 0.4s ease;
+          -moz-transition: background-color 0.4s ease;
+          -ms-transition: background-color 0.4s ease;
+          -o-transition: background-color 0.4s ease;
+          transition: background-color 0.4s ease; }
+          .block-2 ul.menu-section li a:hover span {
+            visibility: visible;
+            opacity: 1;
+            max-height: inherit;
+            margin-top: 28px;
+            -webkit-transition: visibility 0.4s ease;
+            -khtml-transition: visibility 0.4s ease;
+            -moz-transition: visibility 0.4s ease;
+            -ms-transition: visibility 0.4s ease;
+            -o-transition: visibility 0.4s ease;
+            transition: visibility 0.4s ease;
+            -webkit-transition: opacity 0.4s ease;
+            -khtml-transition: opacity 0.4s ease;
+            -moz-transition: opacity 0.4s ease;
+            -ms-transition: opacity 0.4s ease;
+            -o-transition: opacity 0.4s ease;
+            transition: opacity 0.4s ease;
+            -webkit-transition: margin-top 0.4s ease;
+            -khtml-transition: margin-top 0.4s ease;
+            -moz-transition: margin-top 0.4s ease;
+            -ms-transition: margin-top 0.4s ease;
+            -o-transition: margin-top 0.4s ease;
+            transition: margin-top 0.4s ease; }
 
 body {
   font-family: 'Roboto Condensed', sans-serif; }

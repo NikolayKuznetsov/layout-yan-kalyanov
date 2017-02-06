@@ -33,6 +33,60 @@
     width: 11px;
     height: 19px;
   }
+  $iconArrowBlueRight: '../images/icon-arrow-blue-right.png';
+  &.icon-arrow-blue-right {
+    background-image: url($iconArrowBlueRight);
+    width: 11px;
+    height: 19px;
+  }
+  $iconMicrophone: '../images/icon-microphone.png';
+  $iconMicrophoneHover: '../images/icon-microphone-hover.png';
+  &.icon-microphone {
+    background-image: url($iconMicrophone);
+    width: 26px;
+    height: 38px;
+  }
+  &.icon-microphone.hover, a:hover &.icon-microphone {
+    background-image: url($iconMicrophoneHover);
+    width: 34px;
+    height: 46px;
+  }
+  $iconStemware: '../images/icon-stemware.png';
+  $iconStemwareHover: '../images/icon-stemware-hover.png';
+  &.icon-stemware {
+    background-image: url($iconStemware);
+    width: 30px;
+    height: 39px;
+  }
+  &.icon-stemware.hover, a:hover &.icon-stemware {
+    background-image: url($iconStemwareHover);
+    width: 38px;
+    height: 47px;
+  }
+  $iconUsers: '../images/icon-users.png';
+  $iconUsersHover: '../images/icon-users-hover.png';
+  &.icon-users {
+    background-image: url($iconUsers);
+    width: 52px;
+    height: 35px;
+  }
+  &.icon-users.hover, a:hover &.icon-users {
+    background-image: url($iconUsersHover);
+    width: 60px;
+    height: 43px;
+  }
+  $iconSnowflake: '../images/icon-snowflake.png';
+  $iconSnowflakeHover: '../images/icon-snowflake-hover.png';
+  &.icon-snowflake {
+    background-image: url($iconSnowflake);
+    width: 39px;
+    height: 39px;
+  }
+  &.icon-snowflake.hover, a:hover &.icon-snowflake {
+    background-image: url($iconSnowflakeHover);
+    width: 47px;
+    height: 47px;
+  }
 
   $iconLogo: '../images/logo.png';
   &.logo {
