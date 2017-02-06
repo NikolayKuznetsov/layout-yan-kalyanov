@@ -130,7 +130,7 @@
       li {
         width: 100%;
         float: left;
-        padding: 17px 0;
+        padding: 17px 0 12px 0;
         text-align: center;
         position: relative;
         white-space: nowrap;
@@ -179,7 +179,10 @@
     height: 174px;
     float: left;
     text-align: center;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
     > * {
       visibility: hidden;
@@ -194,10 +197,12 @@
       height: 32px;
       display: block;
       @include absolute-center();
+      top: -35px;
     }
     .phone {
       font-size: 24px;
       color: $colorBlack;
+      margin: 36px 0 15px;
     }
     .email {
       font-size: 19px;
@@ -205,6 +210,10 @@
     }
     ul {
       &.link-social {
+        width: 192px;
+        text-align: center;
+        display: block;
+        margin: 16px auto 0;
         li {
           display: flex;
           align-items: center;
@@ -220,12 +229,18 @@
             justify-content: center;
             width: 32px;
             height: 32px;
+            text-align: center;
+            line-height: 32px;
+            color: $colorBlack;
+            text-decoration: none;
             @include border-radius(50%);
             &:hover {
               background-color: $colorBlue;
               border: 1px solid $colorBlue;
               width: 40px;
               height: 40px;
+              line-height: 40px;
+              color: $colorWhite;
             }
           }
         }

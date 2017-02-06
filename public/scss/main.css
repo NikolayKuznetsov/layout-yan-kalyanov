@@ -413,7 +413,7 @@ table {
   .menu-container ul.list-menu li {
     width: 100%;
     float: left;
-    padding: 17px 0;
+    padding: 17px 0 12px 0;
     text-align: center;
     position: relative;
     white-space: nowrap; }
@@ -453,7 +453,10 @@ table {
     height: 174px;
     float: left;
     text-align: center;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: hidden; }
     .menu-container .contact-menu > * {
       visibility: hidden;
@@ -481,39 +484,52 @@ table {
       right: 0;
       top: 0;
       bottom: 0;
-      margin: auto; }
+      margin: auto;
+      top: -35px; }
     .menu-container .contact-menu .phone {
       font-size: 24px;
-      color: #000000; }
+      color: #000000;
+      margin: 36px 0 15px; }
     .menu-container .contact-menu .email {
       font-size: 19px;
       color: #939393; }
-    .menu-container .contact-menu ul.link-social li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      float: left;
-      margin: 0 4px; }
-      .menu-container .contact-menu ul.link-social li a {
-        border: 1px solid #CFCFCF;
+    .menu-container .contact-menu ul.link-social {
+      width: 192px;
+      text-align: center;
+      display: block;
+      margin: 16px auto 0; }
+      .menu-container .contact-menu ul.link-social li {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 32px;
-        height: 32px;
-        -webkit-border-radius: 50%;
-        -khtml-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%; }
-        .menu-container .contact-menu ul.link-social li a:hover {
-          background-color: #0936F4;
-          border: 1px solid #0936F4;
-          width: 40px;
-          height: 40px; }
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 0 4px; }
+        .menu-container .contact-menu ul.link-social li a {
+          border: 1px solid #CFCFCF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          line-height: 32px;
+          color: #000000;
+          text-decoration: none;
+          -webkit-border-radius: 50%;
+          -khtml-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%; }
+          .menu-container .contact-menu ul.link-social li a:hover {
+            background-color: #0936F4;
+            border: 1px solid #0936F4;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: #FFFFFF; }
 
 .page-container {
   overflow: auto;
