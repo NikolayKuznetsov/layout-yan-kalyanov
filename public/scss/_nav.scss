@@ -9,22 +9,23 @@
   left: 0;
   right: auto;
   width: 104px;
-  @include transition(width ease .4s);
+  overflow: hidden;
+  @include transition(width .4s ease);
   &:hover {
     width: 420px;
-    @include transition(width ease .4s);
+    @include transition(width .4s ease);
     .logo-container {
       .logo-min {
         visibility: hidden;
         opacity: 0;
-        @include transition(visibility ease .4s);
-        @include transition(opacity ease .4s);
+        @include transition(visibility .4s ease);
+        @include transition(opacity .4s ease);
       }
       .logo {
         visibility: visible;
         opacity: 1;
-        @include transition(visibility ease .4s);
-        @include transition(opacity ease .4s);
+        @include transition(visibility .4s ease);
+        @include transition(opacity .4s ease);
       }
     }
     ul {
@@ -39,7 +40,7 @@
             background-color: $colorWhite;
             z-index: -1;
             @include border-radius(50%);
-            @include transition(background-color ease .4s);
+            @include transition(background-color .4s ease);
           }
           &:after {
             visibility: hidden;
@@ -53,17 +54,17 @@
               text-decoration: none;
               text-transform: uppercase;
               visibility: visible;
-              @include transition(color ease .4s);
-              @include transition(visibility ease .4s);
+              @include transition(color .4s ease .2s);
+              @include transition(visibility .4s ease .2s);
             }
             &.active, &:hover {
               &:before {
                 background-color: $colorWhiteSmoke;
-                @include transition(background-color ease .4s);
+                @include transition(background-color .4s ease);
               }
               a {
                 color: $colorBlack;
-                @include transition(color ease .4s);
+                @include transition(color .4s ease);
               }
             }
           }
@@ -77,8 +78,8 @@
         opacity: 1;
         position: relative;
         z-index: 1;
-        @include transition(visibility ease .4s);
-        @include transition(opacity ease .4s);
+        @include transition(visibility .4s ease);
+        @include transition(opacity .4s ease);
       }
       &:after {
         visibility: hidden;
@@ -114,14 +115,14 @@
     .logo-min {
       visibility: visible;
       opacity: 1;
-      @include transition(visibility ease .4s);
-      @include transition(opacity ease .4s);
+      @include transition(visibility .4s ease);
+      @include transition(opacity .4s ease);
     }
     .logo {
       visibility: hidden;
       opacity: 0;
-      @include transition(visibility ease .4s);
-      @include transition(opacity ease .4s);
+      @include transition(visibility .4s ease);
+      @include transition(opacity .4s ease);
     }
   }
   ul {
@@ -183,8 +184,8 @@
     > * {
       visibility: hidden;
       opacity: 0;
-      @include transition(visibility ease .4s);
-      @include transition(opacity ease .4s);
+      @include transition(visibility .4s ease);
+      @include transition(opacity .4s ease);
     }
     &:after {
       content: '';

@@ -222,44 +222,51 @@ table {
   left: 0;
   right: auto;
   width: 104px;
-  -webkit-transition: width ease 0.4s;
-  -khtml-transition: width ease 0.4s;
-  -moz-transition: width ease 0.4s;
-  -ms-transition: width ease 0.4s;
-  -o-transition: width ease 0.4s;
-  transition: width ease 0.4s; }
+  overflow: hidden;
+  -webkit-transition: width 0.4s ease;
+  -khtml-transition: width 0.4s ease;
+  -moz-transition: width 0.4s ease;
+  -ms-transition: width 0.4s ease;
+  -o-transition: width 0.4s ease;
+  transition: width 0.4s ease; }
   .menu-container:hover {
     width: 420px;
-    -webkit-transition: width ease 0.4s;
-    -khtml-transition: width ease 0.4s;
-    -moz-transition: width ease 0.4s;
-    -ms-transition: width ease 0.4s;
-    -o-transition: width ease 0.4s;
-    transition: width ease 0.4s; }
+    -webkit-transition: width 0.4s ease;
+    -khtml-transition: width 0.4s ease;
+    -moz-transition: width 0.4s ease;
+    -ms-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    transition: width 0.4s ease; }
     .menu-container:hover .logo-container .logo-min {
       visibility: hidden;
       opacity: 0;
-      -webkit-transition: visibility ease 0.4s;
-      -khtml-transition: visibility ease 0.4s;
-      -moz-transition: visibility ease 0.4s;
-      -ms-transition: visibility ease 0.4s;
-      -o-transition: visibility ease 0.4s;
-      transition: visibility ease 0.4s; }
+      -webkit-transition: visibility 0.4s ease;
+      -khtml-transition: visibility 0.4s ease;
+      -moz-transition: visibility 0.4s ease;
+      -ms-transition: visibility 0.4s ease;
+      -o-transition: visibility 0.4s ease;
+      transition: visibility 0.4s ease;
+      -webkit-transition: opacity 0.4s ease;
+      -khtml-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
     .menu-container:hover .logo-container .logo {
       visibility: visible;
       opacity: 1;
-      -webkit-transition: visibility ease 0.4s;
-      -khtml-transition: visibility ease 0.4s;
-      -moz-transition: visibility ease 0.4s;
-      -ms-transition: visibility ease 0.4s;
-      -o-transition: visibility ease 0.4s;
-      transition: visibility ease 0.4s;
-      -webkit-transition: opacity ease 0.4s;
-      -khtml-transition: opacity ease 0.4s;
-      -moz-transition: opacity ease 0.4s;
-      -ms-transition: opacity ease 0.4s;
-      -o-transition: opacity ease 0.4s;
-      transition: opacity ease 0.4s; }
+      -webkit-transition: visibility 0.4s ease;
+      -khtml-transition: visibility 0.4s ease;
+      -moz-transition: visibility 0.4s ease;
+      -ms-transition: visibility 0.4s ease;
+      -o-transition: visibility 0.4s ease;
+      transition: visibility 0.4s ease;
+      -webkit-transition: opacity 0.4s ease;
+      -khtml-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
     .menu-container:hover ul.list-menu li:before {
       content: '';
       position: absolute;
@@ -279,12 +286,12 @@ table {
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%;
-      -webkit-transition: background-color ease 0.4s;
-      -khtml-transition: background-color ease 0.4s;
-      -moz-transition: background-color ease 0.4s;
-      -ms-transition: background-color ease 0.4s;
-      -o-transition: background-color ease 0.4s;
-      transition: background-color ease 0.4s; }
+      -webkit-transition: background-color 0.4s ease;
+      -khtml-transition: background-color 0.4s ease;
+      -moz-transition: background-color 0.4s ease;
+      -ms-transition: background-color 0.4s ease;
+      -o-transition: background-color 0.4s ease;
+      transition: background-color 0.4s ease; }
     .menu-container:hover ul.list-menu li:after {
       visibility: hidden;
       opacity: 0; }
@@ -295,34 +302,34 @@ table {
       text-decoration: none;
       text-transform: uppercase;
       visibility: visible;
-      -webkit-transition: color ease 0.4s;
-      -khtml-transition: color ease 0.4s;
-      -moz-transition: color ease 0.4s;
-      -ms-transition: color ease 0.4s;
-      -o-transition: color ease 0.4s;
-      transition: color ease 0.4s;
-      -webkit-transition: visibility ease 0.4s;
-      -khtml-transition: visibility ease 0.4s;
-      -moz-transition: visibility ease 0.4s;
-      -ms-transition: visibility ease 0.4s;
-      -o-transition: visibility ease 0.4s;
-      transition: visibility ease 0.4s; }
+      -webkit-transition: color 0.4s ease 0.2s;
+      -khtml-transition: color 0.4s ease 0.2s;
+      -moz-transition: color 0.4s ease 0.2s;
+      -ms-transition: color 0.4s ease 0.2s;
+      -o-transition: color 0.4s ease 0.2s;
+      transition: color 0.4s ease 0.2s;
+      -webkit-transition: visibility 0.4s ease 0.2s;
+      -khtml-transition: visibility 0.4s ease 0.2s;
+      -moz-transition: visibility 0.4s ease 0.2s;
+      -ms-transition: visibility 0.4s ease 0.2s;
+      -o-transition: visibility 0.4s ease 0.2s;
+      transition: visibility 0.4s ease 0.2s; }
     .menu-container:hover ul.list-menu li.item-menu.active:before, .menu-container:hover ul.list-menu li.item-menu:hover:before {
       background-color: #F2F2F2;
-      -webkit-transition: background-color ease 0.4s;
-      -khtml-transition: background-color ease 0.4s;
-      -moz-transition: background-color ease 0.4s;
-      -ms-transition: background-color ease 0.4s;
-      -o-transition: background-color ease 0.4s;
-      transition: background-color ease 0.4s; }
+      -webkit-transition: background-color 0.4s ease;
+      -khtml-transition: background-color 0.4s ease;
+      -moz-transition: background-color 0.4s ease;
+      -ms-transition: background-color 0.4s ease;
+      -o-transition: background-color 0.4s ease;
+      transition: background-color 0.4s ease; }
     .menu-container:hover ul.list-menu li.item-menu.active a, .menu-container:hover ul.list-menu li.item-menu:hover a {
       color: #000000;
-      -webkit-transition: color ease 0.4s;
-      -khtml-transition: color ease 0.4s;
-      -moz-transition: color ease 0.4s;
-      -ms-transition: color ease 0.4s;
-      -o-transition: color ease 0.4s;
-      transition: color ease 0.4s; }
+      -webkit-transition: color 0.4s ease;
+      -khtml-transition: color 0.4s ease;
+      -moz-transition: color 0.4s ease;
+      -ms-transition: color 0.4s ease;
+      -o-transition: color 0.4s ease;
+      transition: color 0.4s ease; }
     .menu-container:hover .contact-menu {
       background-color: #F2F2F2; }
       .menu-container:hover .contact-menu > * {
@@ -330,18 +337,18 @@ table {
         opacity: 1;
         position: relative;
         z-index: 1;
-        -webkit-transition: visibility ease 0.4s;
-        -khtml-transition: visibility ease 0.4s;
-        -moz-transition: visibility ease 0.4s;
-        -ms-transition: visibility ease 0.4s;
-        -o-transition: visibility ease 0.4s;
-        transition: visibility ease 0.4s;
-        -webkit-transition: opacity ease 0.4s;
-        -khtml-transition: opacity ease 0.4s;
-        -moz-transition: opacity ease 0.4s;
-        -ms-transition: opacity ease 0.4s;
-        -o-transition: opacity ease 0.4s;
-        transition: opacity ease 0.4s; }
+        -webkit-transition: visibility 0.4s ease;
+        -khtml-transition: visibility 0.4s ease;
+        -moz-transition: visibility 0.4s ease;
+        -ms-transition: visibility 0.4s ease;
+        -o-transition: visibility 0.4s ease;
+        transition: visibility 0.4s ease;
+        -webkit-transition: opacity 0.4s ease;
+        -khtml-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
       .menu-container:hover .contact-menu:after {
         visibility: hidden;
         opacity: 0; }
@@ -376,33 +383,33 @@ table {
     .menu-container .logo-container .logo-min {
       visibility: visible;
       opacity: 1;
-      -webkit-transition: visibility ease 0.4s;
-      -khtml-transition: visibility ease 0.4s;
-      -moz-transition: visibility ease 0.4s;
-      -ms-transition: visibility ease 0.4s;
-      -o-transition: visibility ease 0.4s;
-      transition: visibility ease 0.4s;
-      -webkit-transition: opacity ease 0.4s;
-      -khtml-transition: opacity ease 0.4s;
-      -moz-transition: opacity ease 0.4s;
-      -ms-transition: opacity ease 0.4s;
-      -o-transition: opacity ease 0.4s;
-      transition: opacity ease 0.4s; }
+      -webkit-transition: visibility 0.4s ease;
+      -khtml-transition: visibility 0.4s ease;
+      -moz-transition: visibility 0.4s ease;
+      -ms-transition: visibility 0.4s ease;
+      -o-transition: visibility 0.4s ease;
+      transition: visibility 0.4s ease;
+      -webkit-transition: opacity 0.4s ease;
+      -khtml-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
     .menu-container .logo-container .logo {
       visibility: hidden;
       opacity: 0;
-      -webkit-transition: visibility ease 0.4s;
-      -khtml-transition: visibility ease 0.4s;
-      -moz-transition: visibility ease 0.4s;
-      -ms-transition: visibility ease 0.4s;
-      -o-transition: visibility ease 0.4s;
-      transition: visibility ease 0.4s;
-      -webkit-transition: opacity ease 0.4s;
-      -khtml-transition: opacity ease 0.4s;
-      -moz-transition: opacity ease 0.4s;
-      -ms-transition: opacity ease 0.4s;
-      -o-transition: opacity ease 0.4s;
-      transition: opacity ease 0.4s; }
+      -webkit-transition: visibility 0.4s ease;
+      -khtml-transition: visibility 0.4s ease;
+      -moz-transition: visibility 0.4s ease;
+      -ms-transition: visibility 0.4s ease;
+      -o-transition: visibility 0.4s ease;
+      transition: visibility 0.4s ease;
+      -webkit-transition: opacity 0.4s ease;
+      -khtml-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
   .menu-container ul.list-menu li {
     width: 100%;
     float: left;
@@ -451,18 +458,18 @@ table {
     .menu-container .contact-menu > * {
       visibility: hidden;
       opacity: 0;
-      -webkit-transition: visibility ease 0.4s;
-      -khtml-transition: visibility ease 0.4s;
-      -moz-transition: visibility ease 0.4s;
-      -ms-transition: visibility ease 0.4s;
-      -o-transition: visibility ease 0.4s;
-      transition: visibility ease 0.4s;
-      -webkit-transition: opacity ease 0.4s;
-      -khtml-transition: opacity ease 0.4s;
-      -moz-transition: opacity ease 0.4s;
-      -ms-transition: opacity ease 0.4s;
-      -o-transition: opacity ease 0.4s;
-      transition: opacity ease 0.4s; }
+      -webkit-transition: visibility 0.4s ease;
+      -khtml-transition: visibility 0.4s ease;
+      -moz-transition: visibility 0.4s ease;
+      -ms-transition: visibility 0.4s ease;
+      -o-transition: visibility 0.4s ease;
+      transition: visibility 0.4s ease;
+      -webkit-transition: opacity 0.4s ease;
+      -khtml-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
     .menu-container .contact-menu:after {
       content: '';
       background-image: url("../images/icon-menu-contact-after.png");
