@@ -1,9 +1,197 @@
+@import "color";
+@import "mixins/mixins";
+
 .menu-container {
-  background-color: #fff;
+  background-color: $colorWhite;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: auto;
   width: 104px;
+  @include transition(width ease .4s);
+  &:hover {
+    width: 420px;
+    @include transition(width ease .4s);
+    ul {
+      &.list-menu {
+        li {
+          &:before {
+            content: '';
+            @include absolute-center();
+            width: 48px;
+            height: 48px;
+            display: block;
+            background-color: $colorWhite;
+            z-index: -1;
+            @include border-radius(50%);
+            @include transition(background-color ease .4s);
+          }
+          &:after {
+            visibility: hidden;
+            opacity: 0;
+          }
+          &.item-menu {
+            a {
+              font-size: 19px;
+              line-height: 100%;
+              color: $colorDarkGray;
+              text-decoration: none;
+              text-transform: uppercase;
+              visibility: visible;
+              @include transition(color ease .4s);
+              @include transition(visibility ease .4s);
+            }
+            &.active, &:hover {
+              &:before {
+                background-color: $colorWhiteSmoke;
+                @include transition(background-color ease .4s);
+              }
+              a {
+                color: $colorBlack;
+                @include transition(color ease .4s);
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact-menu {
+      background-color: $colorWhiteSmoke;
+      > * {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+        @include transition(visibility ease .4s);
+        @include transition(opacity ease .4s);
+      }
+      &:after {
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:before {
+        background-color: $colorWhisper;
+        content: '';
+        position: absolute;
+        width: 310px;
+        height: 310px;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -68px;
+        z-index: 0;
+        @include border-radius(50%);
+      }
+    }
+  }
+  ul {
+    &.list-menu {
+      li {
+        width: 100%;
+        float: left;
+        padding: 17px 0;
+        text-align: center;
+        position: relative;
+        white-space: nowrap;
+        &:before, &:after {
+          content: '';
+          @include absolute-center();
+          display: block;
+          z-index: 1;
+          @include border-radius(50%);
+        }
+        &:before {
+          width: 34px;
+          height: 34px;
+          background-color: $colorWhite;
+        }
+        &:after {
+          width: 10px;
+          height: 10px;
+          background-color: $colorLightGray;
+        }
+        &:hover, &.active {
+          &:before {
+            background-color: $colorGhostWhite;
+          }
+          &:after {
+            background-color: $colorBlue;
+          }
+        }
+        &.item-menu {
+          a {
+            visibility: hidden;
+            position: relative;
+          }
+          &.active, &:hover {
+            a {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-menu {
+    width: 100%;
+    height: 174px;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    > * {
+      visibility: hidden;
+      opacity: 0;
+      @include transition(visibility ease .4s);
+      @include transition(opacity ease .4s);
+    }
+    &:after {
+      content: '';
+      background-image: url("../images/icon-menu-contact-after.png");
+      width: 32px;
+      height: 32px;
+      display: block;
+      @include absolute-center();
+    }
+    .phone {
+      font-size: 24px;
+      color: $colorBlack;
+    }
+    .email {
+      font-size: 19px;
+      color: $colorSuvaGrey;
+    }
+    ul {
+      &.link-social {
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin: 0 4px;
+          a {
+            border: 1px solid $colorVeryLightGrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            @include border-radius(50%);
+            &:hover {
+              background-color: $colorBlue;
+              border: 1px solid $colorBlue;
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

@@ -1,10 +1,15 @@
+@import "color";
+@import "mixins/mixins";
+
 .block-1 {
-  background-image: url("../images/block-1-bg.jpg");
+  //background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: $colorWhite;
   padding-top: 140px;
   padding-left: 230px;
+  height: 100vh;
+  min-height: 860px;
   h2 {
     font-size: 120px;
     font-weight: 700;

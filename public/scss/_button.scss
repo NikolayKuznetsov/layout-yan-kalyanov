@@ -1,3 +1,6 @@
+@import "color";
+@import "mixins/mixins";
+
 .btn-custom {
   background-image: url("../images/button-bg.png");
   width: 235px;
@@ -7,5 +10,8 @@
   padding: 26px 6px;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: $colorWhite;
+  &:hover, &:active {
+    color: $colorWhite;
+  }
 }
