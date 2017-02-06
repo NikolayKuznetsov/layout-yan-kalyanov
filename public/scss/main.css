@@ -189,6 +189,30 @@ table {
     background-image: url("../images/icon-arrow-white-right-o24.png");
     width: 11px;
     height: 19px; }
+  .icon.icon-logo-arrow-down {
+    background-image: url("../images/icon-logo-arrow-down.png");
+    width: 19px;
+    height: 11px; }
+  .icon.icon-logo-arrow-up {
+    background-image: url("../images/icon-logo-arrow-up.png");
+    width: 19px;
+    height: 11px; }
+  .icon.icon-logo-arrow-right {
+    background-image: url("../images/icon-logo-arrow-right.png");
+    width: 11px;
+    height: 19px; }
+  .icon.icon-logo-arrow-left {
+    background-image: url("../images/icon-logo-arrow-left.png");
+    width: 11px;
+    height: 19px; }
+  .icon.logo {
+    background-image: url("../images/logo.png");
+    width: 232px;
+    height: 95px; }
+  .icon.logo-min {
+    background-image: url("../images/logo-min.png");
+    width: 37px;
+    height: 37px; }
 
 .menu-container {
   background-color: #FFFFFF;
@@ -212,6 +236,30 @@ table {
     -ms-transition: width ease 0.4s;
     -o-transition: width ease 0.4s;
     transition: width ease 0.4s; }
+    .menu-container:hover .logo-container .logo-min {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: visibility ease 0.4s;
+      -khtml-transition: visibility ease 0.4s;
+      -moz-transition: visibility ease 0.4s;
+      -ms-transition: visibility ease 0.4s;
+      -o-transition: visibility ease 0.4s;
+      transition: visibility ease 0.4s; }
+    .menu-container:hover .logo-container .logo {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: visibility ease 0.4s;
+      -khtml-transition: visibility ease 0.4s;
+      -moz-transition: visibility ease 0.4s;
+      -ms-transition: visibility ease 0.4s;
+      -o-transition: visibility ease 0.4s;
+      transition: visibility ease 0.4s;
+      -webkit-transition: opacity ease 0.4s;
+      -khtml-transition: opacity ease 0.4s;
+      -moz-transition: opacity ease 0.4s;
+      -ms-transition: opacity ease 0.4s;
+      -o-transition: opacity ease 0.4s;
+      transition: opacity ease 0.4s; }
     .menu-container:hover ul.list-menu li:before {
       content: '';
       position: absolute;
@@ -315,6 +363,46 @@ table {
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         border-radius: 50%; }
+  .menu-container .logo-container {
+    height: 350px;
+    position: relative; }
+    .menu-container .logo-container .logo-min, .menu-container .logo-container .logo {
+      display: block;
+      margin: 0 auto;
+      top: 45px;
+      left: 0;
+      right: 0;
+      position: absolute; }
+    .menu-container .logo-container .logo-min {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: visibility ease 0.4s;
+      -khtml-transition: visibility ease 0.4s;
+      -moz-transition: visibility ease 0.4s;
+      -ms-transition: visibility ease 0.4s;
+      -o-transition: visibility ease 0.4s;
+      transition: visibility ease 0.4s;
+      -webkit-transition: opacity ease 0.4s;
+      -khtml-transition: opacity ease 0.4s;
+      -moz-transition: opacity ease 0.4s;
+      -ms-transition: opacity ease 0.4s;
+      -o-transition: opacity ease 0.4s;
+      transition: opacity ease 0.4s; }
+    .menu-container .logo-container .logo {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: visibility ease 0.4s;
+      -khtml-transition: visibility ease 0.4s;
+      -moz-transition: visibility ease 0.4s;
+      -ms-transition: visibility ease 0.4s;
+      -o-transition: visibility ease 0.4s;
+      transition: visibility ease 0.4s;
+      -webkit-transition: opacity ease 0.4s;
+      -khtml-transition: opacity ease 0.4s;
+      -moz-transition: opacity ease 0.4s;
+      -ms-transition: opacity ease 0.4s;
+      -o-transition: opacity ease 0.4s;
+      transition: opacity ease 0.4s; }
   .menu-container ul.list-menu li {
     width: 100%;
     float: left;

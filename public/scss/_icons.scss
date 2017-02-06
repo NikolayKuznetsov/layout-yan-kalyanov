@@ -8,4 +8,42 @@
     width: 11px;
     height: 19px;
   }
+
+  $iconLogoArrowDown: '../images/icon-logo-arrow-down.png';
+  $iconLogoArrowUp: '../images/icon-logo-arrow-up.png';
+  $iconLogoArrowRight: '../images/icon-logo-arrow-right.png';
+  $iconLogoArrowLeft: '../images/icon-logo-arrow-left.png';
+  &.icon-logo-arrow-down {
+    background-image: url($iconLogoArrowDown);
+    width: 19px;
+    height: 11px;
+  }
+  &.icon-logo-arrow-up {
+    background-image: url($iconLogoArrowUp);
+    width: 19px;
+    height: 11px;
+  }
+  &.icon-logo-arrow-right {
+    background-image: url($iconLogoArrowRight);
+    width: 11px;
+    height: 19px;
+  }
+  &.icon-logo-arrow-left {
+    background-image: url($iconLogoArrowLeft);
+    width: 11px;
+    height: 19px;
+  }
+
+  $iconLogo: '../images/logo.png';
+  &.logo {
+    background-image: url($iconLogo);
+    width: 232px;
+    height: 95px;
+  }
+  $iconLogoMin: '../images/logo-min.png';
+  &.logo-min {
+    background-image: url($iconLogoMin);
+    width: 37px;
+    height: 37px;
+  }
 }

@@ -13,6 +13,20 @@
   &:hover {
     width: 420px;
     @include transition(width ease .4s);
+    .logo-container {
+      .logo-min {
+        visibility: hidden;
+        opacity: 0;
+        @include transition(visibility ease .4s);
+        @include transition(opacity ease .4s);
+      }
+      .logo {
+        visibility: visible;
+        opacity: 1;
+        @include transition(visibility ease .4s);
+        @include transition(opacity ease .4s);
+      }
+    }
     ul {
       &.list-menu {
         li {
@@ -84,6 +98,30 @@
         z-index: 0;
         @include border-radius(50%);
       }
+    }
+  }
+  .logo-container {
+    height: 350px;
+    position: relative;
+    .logo-min, .logo {
+      display: block;
+      margin: 0 auto;
+      top: 45px;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+    .logo-min {
+      visibility: visible;
+      opacity: 1;
+      @include transition(visibility ease .4s);
+      @include transition(opacity ease .4s);
+    }
+    .logo {
+      visibility: hidden;
+      opacity: 0;
+      @include transition(visibility ease .4s);
+      @include transition(opacity ease .4s);
     }
   }
   ul {
