@@ -40,11 +40,17 @@
     height: 19px;
   }
   $iconMicrophone: '../images/icon-microphone.png';
+  $iconMicrophoneSmall: '../images/icon-microphone-small.png';
   $iconMicrophoneHover: '../images/icon-microphone-hover.png';
   &.icon-microphone {
     background-image: url($iconMicrophone);
     width: 26px;
     height: 38px;
+    &.small {
+      background-image: url($iconMicrophoneSmall);
+      width: 18px;
+      height: 27px;
+    }
   }
   &.icon-microphone.hover, a:hover &.icon-microphone {
     background-image: url($iconMicrophoneHover);
@@ -52,11 +58,17 @@
     height: 46px;
   }
   $iconStemware: '../images/icon-stemware.png';
+  $iconStemwareSmall: '../images/icon-stemware-small.png';
   $iconStemwareHover: '../images/icon-stemware-hover.png';
   &.icon-stemware {
     background-image: url($iconStemware);
     width: 30px;
     height: 39px;
+    &.small {
+      background-image: url($iconStemwareSmall);
+      width: 21px;
+      height: 27px;
+    }
   }
   &.icon-stemware.hover, a:hover &.icon-stemware {
     background-image: url($iconStemwareHover);
@@ -64,11 +76,17 @@
     height: 47px;
   }
   $iconUsers: '../images/icon-users.png';
+  $iconUsersSmall: '../images/icon-users-small.png';
   $iconUsersHover: '../images/icon-users-hover.png';
   &.icon-users {
     background-image: url($iconUsers);
     width: 52px;
     height: 35px;
+    &.small {
+      background-image: url($iconUsersSmall);
+      width: 32px;
+      height: 22px;
+    }
   }
   &.icon-users.hover, a:hover &.icon-users {
     background-image: url($iconUsersHover);
@@ -76,20 +94,34 @@
     height: 43px;
   }
   $iconSnowflake: '../images/icon-snowflake.png';
+  $iconSnowflakeSmall: '../images/icon-snowflake-small.png';
   $iconSnowflakeHover: '../images/icon-snowflake-hover.png';
   &.icon-snowflake {
     background-image: url($iconSnowflake);
     width: 39px;
     height: 39px;
+    &.small {
+      background-image: url($iconSnowflakeSmall);
+      width: 27px;
+      height: 27px;
+    }
   }
   &.icon-snowflake.hover, a:hover &.icon-snowflake {
     background-image: url($iconSnowflakeHover);
     width: 47px;
     height: 47px;
   }
+
   $iconListenEther: '../images/icon-listen-ether.png';
   &.icon-listen-ether {
     background-image: url($iconListenEther);
+    width: 32px;
+    height: 32px;
+  }
+
+  $iconLinkSite: '../images/icon-link-site.png';
+  &.icon-link-site {
+    background-image: url($iconLinkSite);
     width: 32px;
     height: 32px;
   }

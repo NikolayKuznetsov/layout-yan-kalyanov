@@ -1,6 +1,7 @@
 @import "color";
 @import "mixins/mixins";
 
+/* block Главная */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -36,6 +37,7 @@
   }
 }
 
+/* block Who is Ян Кальянов */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -118,11 +120,58 @@
   }
 }
 
-.block-3 {
+/* block Идеи на мероприятия */
+.block-4 {
+  background-image: url("../images/block-4-bg.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: $colorWhiteSmokeBg;
+  min-height: 540px;
+  padding-top: 90px;
+  overflow: hidden;
+  position: relative;
+  .title {
+    margin-bottom: 44px;
+  }
+  .desc {
+    margin-bottom: 50px;
+    max-width: 510px;
+  }
+}
+
+.block-3, .block-4, .block-5  {
+  padding-left: 230px;
+  .title {
+    .icon-block {
+      background-color: $colorBlue;
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      margin: 0 18px 0 0;
+    }
+    .value {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 47px;
+      text-transform: uppercase;
+      color: $colorBlack;
+    }
+  }
+  .desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorBlack;
+  }
+}
+
+/* block Ведущий Event-Fm and Участник Дуэта #EK_show */
+.block-3, .block-5 {
   background-color: $colorWhiteSmokeBg;
   min-height: 505px;
   padding-top: 90px;
-  padding-left: 230px;
   overflow: hidden;
   position: relative;
   &:after, &:before {
@@ -148,31 +197,22 @@
   .content {
     position: relative;
     z-index: 1;
+    &:after {
+      background-color: $colorBlue;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 368px;
+      height: 368px;
+      right: 364px;
+      top: -64px;
+      @include border-radius(50%);
+    }
   }
   .title {
     margin-bottom: 64px;
-    .icon-block {
-      background-color: $colorBlue;
-      width: 47px;
-      height: 47px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      float: left;
-      margin: 0 18px 0 0;
-    }
-    .value {
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 47px;
-      text-transform: uppercase;
-      color: $colorBlack;
-    }
   }
   .desc {
-    font-size: 16px;
-    line-height: 24px;
-    color: $colorBlack;
     margin-bottom: 70px;
     max-width: 510px;
   }

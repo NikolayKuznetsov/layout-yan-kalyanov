@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -219,6 +220,10 @@ a, a:hover {
     background-image: url("../images/icon-microphone.png");
     width: 26px;
     height: 38px; }
+    .icon.icon-microphone.small {
+      background-image: url("../images/icon-microphone-small.png");
+      width: 18px;
+      height: 27px; }
   .icon.icon-microphone.hover, a:hover .icon.icon-microphone {
     background-image: url("../images/icon-microphone-hover.png");
     width: 34px;
@@ -227,6 +232,10 @@ a, a:hover {
     background-image: url("../images/icon-stemware.png");
     width: 30px;
     height: 39px; }
+    .icon.icon-stemware.small {
+      background-image: url("../images/icon-stemware-small.png");
+      width: 21px;
+      height: 27px; }
   .icon.icon-stemware.hover, a:hover .icon.icon-stemware {
     background-image: url("../images/icon-stemware-hover.png");
     width: 38px;
@@ -235,6 +244,10 @@ a, a:hover {
     background-image: url("../images/icon-users.png");
     width: 52px;
     height: 35px; }
+    .icon.icon-users.small {
+      background-image: url("../images/icon-users-small.png");
+      width: 32px;
+      height: 22px; }
   .icon.icon-users.hover, a:hover .icon.icon-users {
     background-image: url("../images/icon-users-hover.png");
     width: 60px;
@@ -243,12 +256,20 @@ a, a:hover {
     background-image: url("../images/icon-snowflake.png");
     width: 39px;
     height: 39px; }
+    .icon.icon-snowflake.small {
+      background-image: url("../images/icon-snowflake-small.png");
+      width: 27px;
+      height: 27px; }
   .icon.icon-snowflake.hover, a:hover .icon.icon-snowflake {
     background-image: url("../images/icon-snowflake-hover.png");
     width: 47px;
     height: 47px; }
   .icon.icon-listen-ether {
     background-image: url("../images/icon-listen-ether.png");
+    width: 32px;
+    height: 32px; }
+  .icon.icon-link-site {
+    background-image: url("../images/icon-link-site.png");
     width: 32px;
     height: 32px; }
   .icon.logo {
@@ -595,6 +616,7 @@ a, a:hover {
   .btn-custom:hover, .btn-custom:active {
     color: #FFFFFF; }
 
+/* block ╨ô╨╗╨░╨▓╨╜╨░╤Å */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -624,6 +646,7 @@ a, a:hover {
   .block-1 .group-arrow {
     margin-bottom: 50px; }
 
+/* block Who is ╨»╨╜ ╨Ü╨░╨╗╤î╤Å╨╜╨╛╨▓ */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -734,14 +757,52 @@ a, a:hover {
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
 
-.block-3 {
+/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+.block-4 {
+  background-image: url("../images/block-4-bg.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #F3F3F3;
+  min-height: 540px;
+  padding-top: 90px;
+  overflow: hidden;
+  position: relative; }
+  .block-4 .title {
+    margin-bottom: 44px; }
+  .block-4 .desc {
+    margin-bottom: 50px;
+    max-width: 510px; }
+
+.block-3, .block-4, .block-5 {
+  padding-left: 230px; }
+  .block-3 .title .icon-block, .block-4 .title .icon-block, .block-5 .title .icon-block {
+    background-color: #0936F4;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: 0 18px 0 0; }
+  .block-3 .title .value, .block-4 .title .value, .block-5 .title .value {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000000; }
+  .block-3 .desc, .block-4 .desc, .block-5 .desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; }
+
+/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm and ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+.block-3, .block-5 {
   background-color: #F3F3F3;
   min-height: 505px;
   padding-top: 90px;
-  padding-left: 230px;
   overflow: hidden;
   position: relative; }
-  .block-3:after, .block-3:before {
+  .block-3:after, .block-3:before, .block-5:after, .block-5:before {
     content: '';
     position: absolute;
     display: block;
@@ -751,52 +812,49 @@ a, a:hover {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%; }
-  .block-3:after {
+  .block-3:after, .block-5:after {
     background-color: #E0E0E0;
     width: 870px;
     height: 870px;
     right: 115px;
     top: -180px; }
-  .block-3:before {
+  .block-3:before, .block-5:before {
     background-color: #EBEBEB;
     width: 1520px;
     height: 1520px;
     right: -250px;
     top: -470px; }
-  .block-3 .content {
+  .block-3 .content, .block-5 .content {
     position: relative;
     z-index: 1; }
-  .block-3 .title {
-    margin-bottom: 64px; }
-    .block-3 .title .icon-block {
+    .block-3 .content:after, .block-5 .content:after {
       background-color: #0936F4;
-      width: 47px;
-      height: 47px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      float: left;
-      margin: 0 18px 0 0; }
-    .block-3 .title .value {
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 47px;
-      text-transform: uppercase;
-      color: #000000; }
-  .block-3 .desc {
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 368px;
+      height: 368px;
+      right: 364px;
+      top: -64px;
+      -webkit-border-radius: 50%;
+      -khtml-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
+  .block-3 .title, .block-5 .title {
+    margin-bottom: 64px; }
+  .block-3 .desc, .block-5 .desc {
     margin-bottom: 70px;
     max-width: 510px; }
-  .block-3 .more-link {
+  .block-3 .more-link, .block-5 .more-link {
     font-size: 15px;
     font-weight: bold;
     line-height: 32px;
     text-transform: uppercase;
     color: #000000;
     float: left; }
-    .block-3 .more-link i {
+    .block-3 .more-link i, .block-5 .more-link i {
       margin: 0 0 0 15px;
       float: right; }
 
