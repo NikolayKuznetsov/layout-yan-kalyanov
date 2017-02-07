@@ -4,8 +4,38 @@
       height: 200px;
     }
   }
-  .block-1, .block-3 {
+  .block-1, .block-3, .block-4, .block-5, .block-6 {
     padding-left: 115px;
+  }
+
+  .block-2 {
+    background-position: 50% center;
+  }
+
+  .block-4, .block-6 {
+    background-position: -50% center;
+  }
+
+  .block-7 {
+    background-position: 0 center;
+    .title-block, .form {
+      padding-left: 115px;
+    }
+  }
+
+  .block-3, .block-5 {
+    &:after {
+      right: 15px;
+    }
+    &:before {
+      right: -150px;
+    }
+    .content {
+      &:after {
+        right: 264px;
+      }
+    }
+
   }
 
 }

@@ -1,0 +1,60 @@
+@import "color";
+@import "mixins/mixins";
+
+form {
+  input {
+    &.field-text,
+    &.field-date {
+      height: 60px;
+    }
+    &.field-date {
+      background-image: url("../images/icon-calendar.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      float: left;
+    }
+    &.submit {
+      background-color: transparent;
+      background-image: url("../images/button-submit-bg.png");
+      border: none;
+      width: 428px;
+      height: 107px;
+      font-size: 15px;
+      line-height: 100%;
+      padding: 0 6px 40px 6px;
+      margin: 0 -16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $colorWhite;
+      outline: none;
+    }
+  }
+  textarea {
+    &.field-long-text {
+      border-top: 1px solid $colorCharcoal !important;
+      height: 95px;
+      resize: none;
+    }
+  }
+
+  input.field-text,
+  input.field-date,
+  textarea.field-long-text {
+    background-color: $colorNightRider;
+    border: none;
+    padding: 12px 14px;
+    width: 396px;
+    font-size: 14px;
+    color: $colorWhite;
+    text-transform: uppercase;
+    outline: none;
+    &:focus {
+      @include box-shadow-none();
+    }
+  }
+  input.field-text,
+  textarea.field-long-text {
+    margin-bottom: 16px;
+  }
+
+}
