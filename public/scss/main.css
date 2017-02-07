@@ -620,6 +620,33 @@ a, a:hover {
   -o-box-shadow: none;
   box-shadow: none; }
 
+.button-down {
+  background-image: url("../images/button-down.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 127px;
+  height: 54px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: all 0.4s ease;
+  -khtml-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .button-down:hover {
+    background-image: url("../images/button-down-hover.png");
+    -webkit-transition: all 0.4s ease;
+    -khtml-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+
 form input.field-text, form input.field-date {
   height: 60px; }
 form input.field-date {
@@ -678,7 +705,8 @@ form textarea.field-long-text {
   padding-top: 140px;
   padding-left: 230px;
   height: 100vh;
-  min-height: 860px; }
+  min-height: 860px;
+  position: relative; }
   .block-1 h2 {
     font-size: 120px;
     font-weight: 700;
