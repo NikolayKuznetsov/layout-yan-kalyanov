@@ -120,6 +120,13 @@
   }
 }
 
+/* block Ведущий Event-Fm */
+.block-3 {
+  .desc {
+    margin-bottom: 70px;
+  }
+}
+
 /* block Идеи на мероприятия */
 .block-4 {
   background-image: url("../images/block-4-bg.png");
@@ -139,7 +146,32 @@
   }
 }
 
-.block-3, .block-4, .block-5  {
+/* block Участник Дуэта #EK_show */
+.block-5 {
+  .desc {
+    margin-bottom: 50px;
+  }
+}
+
+/* block Идеи на мероприятия */
+.block-6 {
+  background-image: url("../images/block-6-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: $colorWhiteSmokeBg;
+  min-height: 425px;
+  padding-top: 110px;
+  overflow: hidden;
+  position: relative;
+  .title {
+    margin-bottom: 44px;
+  }
+  .desc {
+    max-width: 510px;
+  }
+}
+
+.block-3, .block-4, .block-5, .block-6 {
   padding-left: 230px;
   .title {
     .icon-block {
@@ -213,19 +245,39 @@
     margin-bottom: 64px;
   }
   .desc {
-    margin-bottom: 70px;
     max-width: 510px;
   }
   .more-link {
     font-size: 15px;
     font-weight: bold;
-    line-height: 32px;
+    line-height: 42px;
     text-transform: uppercase;
     color: $colorBlack;
     float: left;
-    i {
-      margin: 0 0 0 15px;
+    display: flex;
+    align-items: center;
+    .icon-block {
+      background-color: $colorWhisper;
+      width: 32px;
+      height: 32px;
+      margin: -5px 0 -5px 15px;
+      font-size: 14px;
+      text-align: center;
       float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorBlack;
+      @include border-radius(50%);
+    }
+    &:hover {
+      cursor: pointer;
+      .icon-block {
+        background-color: $colorBlue;
+        color: $colorWhite;
+        width: 42px;
+        height: 42px;
+      }
     }
   }
 }
