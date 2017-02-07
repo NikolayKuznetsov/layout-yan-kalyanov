@@ -247,6 +247,10 @@ a, a:hover {
     background-image: url("../images/icon-snowflake-hover.png");
     width: 47px;
     height: 47px; }
+  .icon.icon-listen-ether {
+    background-image: url("../images/icon-listen-ether.png");
+    width: 32px;
+    height: 32px; }
   .icon.logo {
     background-image: url("../images/logo.png");
     width: 232px;
@@ -623,7 +627,8 @@ a, a:hover {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
   background-color: #161616;
-  height: 404px; }
+  height: 404px;
+  overflow: hidden; }
   .block-2 .title-block {
     background-color: #000000;
     padding: 34px 36px;
@@ -727,6 +732,12 @@ a, a:hover {
             -ms-transition: margin-top 0.4s ease;
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
+
+.block-3 {
+  background-color: #F3F3F3;
+  height: 505px;
+  padding-left: 230px;
+  overflow: hidden; }
 
 body {
   font-family: 'Roboto Condensed', sans-serif; }

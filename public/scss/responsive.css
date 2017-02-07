@@ -1,5 +1,8 @@
 @media (max-width: 1366px) {
   .menu-container .logo-container {
-    height: 200px; } }
+    height: 200px; }
+
+  .block-1, .block-3 {
+    padding-left: 115px; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -87,6 +87,12 @@
     width: 47px;
     height: 47px;
   }
+  $iconListenEther: '../images/icon-listen-ether.png';
+  &.icon-listen-ether {
+    background-image: url($iconListenEther);
+    width: 32px;
+    height: 32px;
+  }
 
   $iconLogo: '../images/logo.png';
   &.logo {
