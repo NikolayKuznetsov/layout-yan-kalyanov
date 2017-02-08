@@ -35,11 +35,21 @@
                         </div>
                     </div>
                     <ul class="list-menu">
-                        <li class="item-menu active"><a href="javascript:void(0);">Главная</a></li>
-                        <li class="item-menu"><a href="javascript:void(0);">Who is Ян Кальянов</a></li>
-                        <li class="item-menu"><a href="javascript:void(0);">Свадебный вечер</a></li>
-                        <li class="item-menu"><a href="javascript:void(0);">Корпоративное мероприятие</a></li>
-                        <li class="item-menu"><a href="javascript:void(0);">Контакты</a></li>
+                        <li class="item-menu">
+                            <a class="link-scroll" href="#block-1">Главная</a>
+                        </li>
+                        <li class="item-menu">
+                            <a class="link-scroll" href="#block-2">Who is Ян Кальянов</a>
+                        </li>
+                        <li class="item-menu">
+                            <a class="link-scroll" href="javascript:void(0);">Свадебный вечер</a>
+                        </li>
+                        <li class="item-menu">
+                            <a class="link-scroll" href="javascript:void(0);">Корпоративное мероприятие</a>
+                        </li>
+                        <li class="item-menu">
+                            <a class="link-scroll" href="#block-8">Контакты</a>
+                        </li>
                     </ul>
                     <div class="contact-menu">
                         <div class="phone">8 (909) 099-99-00</div>
@@ -57,7 +67,7 @@
             </div>
             <div class="page-container">
                 <!-- START block-1 -->
-                <div class="block block-1">
+                <div id="block-1" class="block block-1">
                     <div class="content">
                         <p class="group-arrow">
                             <i class="icon icon-arrow-right-white"></i>
@@ -74,12 +84,12 @@
                         </div>
                         <a href="javascript:void(0);" class="btn btn-custom">Забронировать дату</a>
 
-                        <a href="javascript:void(0);" class="button-down"></a>
+                        <a class="button-down link-scroll" href="#block-2"></a>
                     </div>
                 </div> <!-- END block-1 -->
 
                 <!-- START block-2 -->
-                <div class="block block-2">
+                <div id="block-2" class="block block-2">
                     <div class="content">
                         <div class="title-block">
                             <span>Who is Ян Кальянов?</span>
@@ -91,25 +101,25 @@
                             <div class="col-md-12">
                                 <ul class="menu-section">
                                     <li class="item">
-                                        <a href="javascript:void(0);">
+                                        <a class="link-scroll" href="#block-3">
                                             <i class="icon icon-microphone"></i>
                                             <span>name link</span>
                                         </a>
                                     </li>
                                     <li class="item">
-                                        <a href="javascript:void(0);">
+                                        <a class="link-scroll" href="#block-4">
                                             <i class="icon icon-stemware"></i>
                                             <span>name link</span>
                                         </a>
                                     </li>
                                     <li class="item">
-                                        <a href="javascript:void(0);">
+                                        <a class="link-scroll" href="#block-5">
                                             <i class="icon icon-users"></i>
                                             <span>name link</span>
                                         </a>
                                     </li>
                                     <li class="item">
-                                        <a href="javascript:void(0);">
+                                        <a class="link-scroll" href="#block-6">
                                             <i class="icon icon-snowflake"></i>
                                             <span>name link</span>
                                         </a>
@@ -121,7 +131,7 @@
                 </div> <!-- END block-2 -->
 
                 <!-- START block-3 -->
-                <div class="block block-3">
+                <div id="block-3" class="block block-3">
                     <div class="content">
                         <div class="row">
                             <div class="col-md-6">
@@ -152,7 +162,7 @@
 
 
                 <!-- START block-4 -->
-                <div class="block block-4">
+                <div id="block-4" class="block block-4">
                     <div class="content">
                         <div class="row">
                             <div class="col-md-6"></div>
@@ -178,7 +188,7 @@
                 </div> <!-- END block-4 -->
 
                 <!-- START block-5 -->
-                <div class="block block-5">
+                <div id="block-5" class="block block-5">
                     <div class="content">
                         <div class="row">
                             <div class="col-md-6">
@@ -209,7 +219,7 @@
                 </div> <!-- END block-5 -->
 
                 <!-- START block-6 -->
-                <div class="block block-6">
+                <div id="block-6" class="block block-6">
                     <div class="content">
                         <div class="row">
                             <div class="col-md-6"></div>
@@ -232,7 +242,7 @@
                 </div> <!-- END block-6 -->
 
                 <!-- START block-7 -->
-                <div class="block block-7">
+                <div id="block-7" class="block block-7">
                     <div class="content">
                         <div class="title-block">
                             <span>Всегда на связи</span>
@@ -267,7 +277,7 @@
                 </div> <!-- END block-7 -->
 
                 <!-- START block-8 -->
-                <div class="block block-8">
+                <div id="block-8" class="block block-8">
                     <div class="content">
                         <div class="title-block">
                             <span>Контакты</span>
@@ -341,5 +351,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
