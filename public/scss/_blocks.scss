@@ -398,17 +398,47 @@
   }
   &:after {
     background-color: $colorGainsboro;
-    width: 870px;
-    height: 870px;
-    right: 115px;
-    top: -180px;
+    width: 400px;
+    height: 400px;
+    right: 250px;
+    top: -90px;
+    opacity: .6;
+    @include transition(all 10.4s ease);
   }
   &:before {
     background-color: $colorWhisper;
-    width: 1520px;
-    height: 1520px;
-    right: -250px;
-    top: -470px;
+    width: 700px;
+    height: 700px;
+    right: 110px;
+    top: -236px;
+    opacity: .7;
+    @include transition(all 3s ease);
+  }
+  &.animate-bg {
+    &:after {
+      width: 870px;
+      height: 870px;
+      right: 115px;
+      top: -180px;
+      opacity: 1;
+      @include transition(all 3s ease);
+    }
+    &:before {
+      width: 1520px;
+      height: 1520px;
+      right: -250px;
+      top: -470px;
+      opacity: 1;
+      @include transition(all 3s ease);
+    }
+    .content {
+      &:after {
+        width: 368px;
+        height: 368px;
+        opacity: 1;
+        @include transition(all 3s ease);
+      }
+    }
   }
   .content {
     position: relative;
@@ -418,12 +448,14 @@
       content: '';
       position: absolute;
       display: block;
-      width: 368px;
-      height: 368px;
+      width: 180px;
+      height: 180px;
       right: 364px;
       top: -64px;
       z-index: -1;
+      opacity: .5;
       @include border-radius(50%);
+      @include transition(all 3s ease);
     }
   }
   .title {

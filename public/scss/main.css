@@ -1077,16 +1077,64 @@ form textarea.field-long-text {
     border-radius: 50%; }
   .block-3:after, .block-5:after {
     background-color: #E0E0E0;
+    width: 400px;
+    height: 400px;
+    right: 250px;
+    top: -90px;
+    opacity: .6;
+    -webkit-transition: all 10.4s ease;
+    -khtml-transition: all 10.4s ease;
+    -moz-transition: all 10.4s ease;
+    -ms-transition: all 10.4s ease;
+    -o-transition: all 10.4s ease;
+    transition: all 10.4s ease; }
+  .block-3:before, .block-5:before {
+    background-color: #EBEBEB;
+    width: 700px;
+    height: 700px;
+    right: 110px;
+    top: -236px;
+    opacity: .7;
+    -webkit-transition: all 3s ease;
+    -khtml-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease; }
+  .block-3.animate-bg:after, .block-5.animate-bg:after {
     width: 870px;
     height: 870px;
     right: 115px;
-    top: -180px; }
-  .block-3:before, .block-5:before {
-    background-color: #EBEBEB;
+    top: -180px;
+    opacity: 1;
+    -webkit-transition: all 3s ease;
+    -khtml-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease; }
+  .block-3.animate-bg:before, .block-5.animate-bg:before {
     width: 1520px;
     height: 1520px;
     right: -250px;
-    top: -470px; }
+    top: -470px;
+    opacity: 1;
+    -webkit-transition: all 3s ease;
+    -khtml-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease; }
+  .block-3.animate-bg .content:after, .block-5.animate-bg .content:after {
+    width: 368px;
+    height: 368px;
+    opacity: 1;
+    -webkit-transition: all 3s ease;
+    -khtml-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease; }
   .block-3 .content, .block-5 .content {
     position: relative;
     z-index: 1; }
@@ -1095,17 +1143,24 @@ form textarea.field-long-text {
       content: '';
       position: absolute;
       display: block;
-      width: 368px;
-      height: 368px;
+      width: 180px;
+      height: 180px;
       right: 364px;
       top: -64px;
       z-index: -1;
+      opacity: .5;
       -webkit-border-radius: 50%;
       -khtml-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-      border-radius: 50%; }
+      border-radius: 50%;
+      -webkit-transition: all 3s ease;
+      -khtml-transition: all 3s ease;
+      -moz-transition: all 3s ease;
+      -ms-transition: all 3s ease;
+      -o-transition: all 3s ease;
+      transition: all 3s ease; }
   .block-3 .title, .block-5 .title {
     margin-bottom: 64px; }
   .block-3 .desc, .block-5 .desc {
