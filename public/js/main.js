@@ -64,4 +64,12 @@ $(document).ready(function () {
             console.log('#block-8');
         }
     });
+
+
+
+    $('.slider-1').slick({
+        slidesToShow: 3,
+        centerMode: true,
+        infinite: true
+    });
 });
