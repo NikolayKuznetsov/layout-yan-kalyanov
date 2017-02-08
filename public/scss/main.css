@@ -696,7 +696,7 @@ form input.field-text,
 form textarea.field-long-text {
   margin-bottom: 16px; }
 
-/* block ╨ô╨╗╨░╨▓╨╜╨░╤Å */
+/* block ╨У╨╗╨░╨▓╨╜╨░╤П */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -727,7 +727,7 @@ form textarea.field-long-text {
   .block-1 .group-arrow {
     margin-bottom: 50px; }
 
-/* block Who is ╨»╨╜ ╨Ü╨░╨╗╤î╤Å╨╜╨╛╨▓ */
+/* block Who is ╨п╨╜ ╨Ъ╨░╨╗╤М╤П╨╜╨╛╨▓ */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -736,22 +736,12 @@ form textarea.field-long-text {
   height: 404px;
   overflow: hidden; }
   .block-2 .title-block {
-    background-color: #000000;
-    padding: 34px 36px;
-    font-size: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 100%;
-    color: #FFFFFF;
     width: 948px;
-    height: 125px;
     float: right; }
     .block-2 .title-block span {
-      float: left;
-      margin: 0 50px 0 0; }
+      float: left; }
     .block-2 .title-block .icon {
-      float: left;
-      margin: 20px 0; }
+      float: left; }
   .block-2 ul.menu-section {
     margin: 50px 225px 0 0;
     float: right; }
@@ -839,11 +829,11 @@ form textarea.field-long-text {
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
 
-/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm */
+/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm */
 .block-3 .desc {
   margin-bottom: 70px; }
 
-/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
 .block-4 {
   background-image: url("../images/block-4-bg.png");
   background-repeat: no-repeat;
@@ -859,11 +849,11 @@ form textarea.field-long-text {
     margin-bottom: 50px;
     max-width: 510px; }
 
-/* block ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+/* block ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
 .block-5 .desc {
   margin-bottom: 50px; }
 
-/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
 .block-6 {
   background-image: url("../images/block-6-bg.jpg");
   background-repeat: no-repeat;
@@ -885,22 +875,12 @@ form textarea.field-long-text {
   background-color: #161616;
   min-height: 768px; }
   .block-7 .title-block {
-    background-color: #000000;
-    padding: 34px 46px 34px 230px;
-    font-size: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 100%;
-    color: #FFFFFF;
+    padding-left: 230px;
+    padding-right: 46px;
     width: 956px;
-    height: 125px;
-    float: left; }
-    .block-7 .title-block span {
-      float: left;
-      margin: 0 50px 0 0; }
+    float: left !important; }
     .block-7 .title-block .icon {
-      float: right;
-      margin: 20px 0; }
+      float: right; }
   .block-7 .form {
     padding-left: 230px; }
     .block-7 .form .field-item {
@@ -924,22 +904,14 @@ form textarea.field-long-text {
   min-height: 768px;
   overflow: hidden; }
   .block-8 .title-block {
-    background-color: #000000;
-    padding: 34px 230px 34px 40px;
-    font-size: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 100%;
-    color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 230px;
     width: 1224px;
-    height: 125px;
     float: right; }
     .block-8 .title-block span {
-      float: left;
-      margin: 0 50px 0 0; }
+      float: left; }
     .block-8 .title-block .icon {
-      float: right;
-      margin: 20px 0; }
+      float: right; }
   .block-8 .contacts {
     padding-left: 20px; }
     .block-8 .contacts .name, .block-8 .contacts .desc {
@@ -1058,7 +1030,7 @@ form textarea.field-long-text {
     line-height: 24px;
     color: #000000; }
 
-/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm and ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm and ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
 .block-3, .block-5 {
   background-color: #F3F3F3;
   min-height: 505px;
@@ -1199,6 +1171,23 @@ form textarea.field-long-text {
         color: #FFFFFF;
         width: 42px;
         height: 42px; }
+
+.block-2 .title-block, .block-7 .title-block, .block-8 .title-block {
+  background-color: #000000;
+  padding: 34px 36px;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 100%;
+  color: #FFFFFF;
+  height: 125px;
+  float: right; }
+  .block-2 .title-block span, .block-7 .title-block span, .block-8 .title-block span {
+    float: left;
+    margin: 0 50px 0 0; }
+  .block-2 .title-block .icon, .block-7 .title-block .icon, .block-8 .title-block .icon {
+    float: left;
+    margin: 20px 0; }
 
 body {
   font-family: 'Roboto Condensed', sans-serif; }

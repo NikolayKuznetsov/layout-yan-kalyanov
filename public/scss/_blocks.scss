@@ -47,23 +47,13 @@
   height: 404px;
   overflow: hidden;
   .title-block {
-    background-color: $colorBlack;
-    padding: 34px 36px;
-    font-size: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 100%;
-    color: $colorWhite;
     width: 948px;
-    height: 125px;
     float: right;
     span {
       float: left;
-      margin: 0 50px 0 0;
     }
     .icon {
       float: left;
-      margin: 20px 0;
     }
   }
   ul {
@@ -180,23 +170,12 @@
   background-color: $coloNero;
   min-height: 768px;
   .title-block {
-    background-color: $colorBlack;
-    padding: 34px 46px 34px 230px;
-    font-size: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 100%;
-    color: $colorWhite;
+    padding-left: 230px;
+    padding-right: 46px;
     width: 956px;
-    height: 125px;
-    float: left;
-    span {
-      float: left;
-      margin: 0 50px 0 0;
-    }
+    float: left !important;
     .icon {
       float: right;
-      margin: 20px 0;
     }
   }
   .form {
@@ -227,23 +206,15 @@
   min-height: 768px;
   overflow: hidden;
   .title-block {
-    background-color: $colorBlack;
-    padding: 34px 230px 34px 40px;
-    font-size: 60px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 100%;
-    color: $colorWhite;
+    padding-left: 40px;
+    padding-right: 230px;
     width: 1224px;
-    height: 125px;
     float: right;
     span {
       float: left;
-      margin: 0 50px 0 0;
     }
     .icon {
       float: right;
-      margin: 20px 0;
     }
   }
   .contacts {
@@ -495,6 +466,28 @@
         width: 42px;
         height: 42px;
       }
+    }
+  }
+}
+
+.block-2, .block-7, .block-8 {
+  .title-block {
+    background-color: $colorBlack;
+    padding: 34px 36px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: $colorWhite;
+    height: 125px;
+    float: right;
+    span {
+      float: left;
+      margin: 0 50px 0 0;
+    }
+    .icon {
+      float: left;
+      margin: 20px 0;
     }
   }
 }

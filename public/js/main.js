@@ -34,7 +34,11 @@ $(document).ready(function () {
         return $(result);
     }
 
-
+    if (come("#block-1")) {
+        $('.menu-container ul.list-menu li').removeClass('active');
+        $('.menu-container ul.list-menu li:nth-child(1)').addClass('active');
+        console.log('#block-1');
+    }
 
     $(window).scroll(function () {
 
