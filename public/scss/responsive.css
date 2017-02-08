@@ -12,9 +12,17 @@
     background-position: -50% center; }
 
   .block-7 {
-    background-position: 0 center; }
+    background-position: 25% center; }
     .block-7 .title-block, .block-7 .form {
       padding-left: 115px; }
+
+  .block-8 {
+    background-position: 25% center; }
+    .block-8 .title-block {
+      padding-right: 115px;
+      width: 65%; }
+    .block-8 .row .col-md-5, .block-8 .row .col-md-7 {
+      width: 50%; }
 
   .block-3:after, .block-5:after {
     right: 15px; }

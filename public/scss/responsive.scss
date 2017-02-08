@@ -23,6 +23,19 @@
     }
   }
 
+  .block-8 {
+    background-position: 25% center;
+    .title-block {
+      padding-right: 115px;
+      width: 65%;
+    }
+    .row {
+      .col-md-5, .col-md-7 {
+        width: 50%;
+      }
+    }
+  }
+
   .block-3, .block-5 {
     &:after {
       right: 15px;
