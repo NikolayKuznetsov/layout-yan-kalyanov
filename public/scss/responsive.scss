@@ -59,6 +59,14 @@
   }
 }
 
+@media (max-width: 1440px) {
+
+  .block-1 {
+    padding-top: 40px;
+    min-height: inherit;
+  }
+}
+
 @media (max-width: 1366px) {
   .menu-container {
     .logo-container {
@@ -139,6 +147,7 @@
   }
 
   .block-7 {
+    background-position: 40% center;
     .title-block, .form {
       padding-left: 65px;
     }
@@ -250,4 +259,111 @@
     }
   }
 
+}
+
+@media (max-width: 960px) {
+  .block-4 {
+    background-position: -550px center;
+  }
+  .block-6 {
+    background-position: -260px center;
+  }
+  .block-4, .block-6 {
+    .row {
+      .col-md-6 {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          width: 60%;
+          float: right;
+        }
+      }
+    }
+  }
+  .block-8 {
+    .row {
+      .col-md-5 {
+        display: none;
+      }
+      .col-md-7 {
+        float: right;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 860px) {
+  .block-2 {
+    background-image: none;
+    height: inherit;
+    padding-bottom: 24px;
+  }
+
+  .block-4, .block-6 {
+    .row {
+      position: relative;
+      z-index: 1;
+      .col-md-6 {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          width: 100%;
+          float: right;
+        }
+      }
+    }
+  }
+
+  .block-5 {
+    overflow: visible;
+  }
+
+  .block-7 {
+    height: inherit;
+    .form {
+      padding: 0 24px;
+      .field-item {
+        width: 100%;
+        input, textarea {
+          width: 100%;
+        }
+      }
+      .action-form {
+        .submit {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .block-8 {
+    .row {
+      .col-md-7 {
+        width: 100%;
+      }
+    }
+  }
+
+  .block-4, .block-6, .block-7, .block-8 {
+    background-image: none;
+    min-height: inherit;
+    padding-bottom: 24px;
+    .desc {
+      width: 100%;
+      max-width: inherit;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .block-2, .block-7, .block-8 {
+    .title-block {
+      width: 100%;
+    }
+  }
 }

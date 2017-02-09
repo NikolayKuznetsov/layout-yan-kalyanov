@@ -777,7 +777,7 @@ form textarea.field-long-text {
   .slick-next:before {
     background-image: url("../images/icon-slider-next.png"); }
 
-/* block ╨ô╨╗╨░╨▓╨╜╨░╤Å */
+/* block ╨У╨╗╨░╨▓╨╜╨░╤П */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -808,7 +808,7 @@ form textarea.field-long-text {
   .block-1 .group-arrow {
     margin-bottom: 50px; }
 
-/* block Who is ╨»╨╜ ╨Ü╨░╨╗╤î╤Å╨╜╨╛╨▓ */
+/* block Who is ╨п╨╜ ╨Ъ╨░╨╗╤М╤П╨╜╨╛╨▓ */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -910,11 +910,11 @@ form textarea.field-long-text {
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
 
-/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm */
+/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm */
 .block-3 .desc {
   margin-bottom: 70px; }
 
-/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
 .block-4 {
   background-image: url("../images/block-4-bg.png");
   background-repeat: no-repeat;
@@ -928,11 +928,11 @@ form textarea.field-long-text {
     margin-bottom: 50px;
     max-width: 510px; }
 
-/* block ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+/* block ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
 .block-5 .desc {
   margin-bottom: 50px; }
 
-/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
 .block-6 {
   background-image: url("../images/block-6-bg.jpg");
   background-repeat: no-repeat;
@@ -1107,7 +1107,7 @@ form textarea.field-long-text {
     line-height: 24px;
     color: #000000; }
 
-/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm and ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm and ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
 .block-3, .block-5 {
   background-color: #F3F3F3;
   min-height: 505px;
@@ -1220,7 +1220,6 @@ form textarea.field-long-text {
     line-height: 42px;
     text-transform: uppercase;
     color: #000000;
-    float: left;
     display: flex;
     align-items: center; }
     .block-3 .more-link .icon-block, .block-5 .more-link .icon-block {
