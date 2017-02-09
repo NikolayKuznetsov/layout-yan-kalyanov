@@ -72,4 +72,10 @@ $(document).ready(function () {
         centerMode: true,
         infinite: true
     });
+
+    $('.slider-2').slick({
+        slidesToShow: 3,
+        centerMode: true,
+        infinite: true
+    });
 });
