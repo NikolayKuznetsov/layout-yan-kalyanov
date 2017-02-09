@@ -696,9 +696,13 @@ form input.field-text,
 form textarea.field-long-text {
   margin-bottom: 16px; }
 
+.slick-slider {
+  max-width: 670px; }
+
 .slick-list {
-  height: 330px;
-  padding: 72px 0 !important; }
+  height: 420px;
+  padding: 140px 0 72px !important;
+  margin-top: -60px; }
 
 .item-slide {
   position: relative;
@@ -716,12 +720,12 @@ form textarea.field-long-text {
   transition: all 0.6s ease; }
   .item-slide.slick-center {
     z-index: 2;
-    -webkit-transform: scale(2);
-    -khtml-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(2.25);
+    -khtml-transform: scale(2.25);
+    -moz-transform: scale(2.25);
+    -ms-transform: scale(2.25);
+    -o-transform: scale(2.25);
+    transform: scale(2.25);
     -webkit-transition: all 0.6s ease;
     -khtml-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
@@ -773,7 +777,7 @@ form textarea.field-long-text {
   .slick-next:before {
     background-image: url("../images/icon-slider-next.png"); }
 
-/* block ╨У╨╗╨░╨▓╨╜╨░╤П */
+/* block ╨ô╨╗╨░╨▓╨╜╨░╤Å */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -804,7 +808,7 @@ form textarea.field-long-text {
   .block-1 .group-arrow {
     margin-bottom: 50px; }
 
-/* block Who is ╨п╨╜ ╨Ъ╨░╨╗╤М╤П╨╜╨╛╨▓ */
+/* block Who is ╨»╨╜ ╨Ü╨░╨╗╤î╤Å╨╜╨╛╨▓ */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -906,11 +910,11 @@ form textarea.field-long-text {
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
 
-/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm */
+/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm */
 .block-3 .desc {
   margin-bottom: 70px; }
 
-/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
+/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
 .block-4 {
   background-image: url("../images/block-4-bg.png");
   background-repeat: no-repeat;
@@ -920,17 +924,15 @@ form textarea.field-long-text {
   padding-top: 90px;
   overflow: hidden;
   position: relative; }
-  .block-4 .title {
-    margin-bottom: 44px; }
   .block-4 .desc {
     margin-bottom: 50px;
     max-width: 510px; }
 
-/* block ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
+/* block ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
 .block-5 .desc {
   margin-bottom: 50px; }
 
-/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
+/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
 .block-6 {
   background-image: url("../images/block-6-bg.jpg");
   background-repeat: no-repeat;
@@ -940,8 +942,6 @@ form textarea.field-long-text {
   padding-top: 110px;
   overflow: hidden;
   position: relative; }
-  .block-6 .title {
-    margin-bottom: 44px; }
   .block-6 .desc {
     max-width: 510px; }
 
@@ -1107,7 +1107,7 @@ form textarea.field-long-text {
     line-height: 24px;
     color: #000000; }
 
-/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm and ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
+/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm and ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
 .block-3, .block-5 {
   background-color: #F3F3F3;
   min-height: 505px;
@@ -1248,6 +1248,13 @@ form textarea.field-long-text {
         color: #FFFFFF;
         width: 42px;
         height: 42px; }
+  .block-3 .text-block, .block-5 .text-block {
+    width: calc(100% - 900px); }
+  .block-3 .slider-block, .block-5 .slider-block {
+    width: 900px; }
+
+.block-4 .title, .block-6 .title {
+  margin-bottom: 44px; }
 
 .block-2 .title-block, .block-7 .title-block, .block-8 .title-block {
   background-color: #000000;

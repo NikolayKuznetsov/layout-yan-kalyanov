@@ -1,3 +1,64 @@
+@media (max-width: 1780px) {
+  .block-1, .block-3, .block-4, .block-5, .block-6 {
+    padding-left: 130px;
+  }
+  .block-7 {
+    .title-block, .form {
+      padding-left: 130px;
+    }
+  }
+  .block-3, .block-5 {
+    .text-block {
+      width: calc(100% - 600px);
+    }
+    .slider-block {
+      width: 600px;
+    }
+  }
+  .slick-slider {
+    max-width: 550px;
+  }
+  .block-3, .block-5 {
+    &.animate-bg {
+      &:after {
+        top: -140px;
+        right: -10px;
+        width: 700px;
+        height: 700px;
+      }
+      &:before {
+        width: 1300px;
+        height: 1300px;
+        right: -250px;
+        top: -420px;
+      }
+      .content {
+        &:after {
+          right: 144px;
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  .block-2 {
+    background-position: 50% center;
+  }
+
+  .block-4, .block-6 {
+    background-position: -50% center;
+  }
+
+  .block-7 {
+    background-position: 0 center;
+  }
+
+  .block-8 {
+    background-position: 25% center;
+  }
+}
+
 @media (max-width: 1366px) {
   .menu-container {
     .logo-container {
@@ -28,16 +89,7 @@
     padding-left: 115px;
   }
 
-  .block-2 {
-    background-position: 50% center;
-  }
-
-  .block-4, .block-6 {
-    background-position: -50% center;
-  }
-
   .block-7 {
-    background-position: 0 center;
     min-height: inherit;
     height: 100vh;
     .title-block, .form {
@@ -52,7 +104,6 @@
   }
 
   .block-8 {
-    background-position: 25% center;
     min-height: inherit;
     height: 100vh;
     .title-block {
@@ -66,20 +117,6 @@
     }
   }
 
-  .block-3, .block-5 {
-    &:after {
-      right: 15px;
-    }
-    &:before {
-      right: -150px;
-    }
-    .content {
-      &:after {
-        right: 264px;
-      }
-    }
-  }
-
   .block-2, .block-7, .block-8 {
     .title-block {
       padding: 27px 36px;
@@ -87,6 +124,128 @@
       height: 100px;
       .icon {
         margin: 15px 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .block-1, .block-3, .block-4, .block-5, .block-6 {
+    padding-left: 65px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  .block-7 {
+    .title-block, .form {
+      padding-left: 65px;
+    }
+  }
+
+  .block-8 {
+    .title-block {
+      padding-right: 65px;
+    }
+  }
+
+  .block-3, .block-4, .block-5, .block-6 {
+    padding-top: 40px;
+  }
+
+  .block-2, .block-7, .block-8 {
+    .title-block {
+      width: 65%;
+    }
+  }
+
+  .block-4, .block-6 {
+    background-position: -75% center;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .block-1 {
+    background-position: 70% center;
+  }
+
+  .block-2 {
+    ul {
+      &.menu-section {
+        margin: 24px 48px 0 0;
+      }
+    }
+  }
+
+  .block-4 {
+    background-position: -420px center;
+  }
+
+  .block-6 {
+    background-position: -200px center;
+  }
+
+  .block-7 {
+    background-position: 35% center;
+  }
+
+  .block-1, .block-3, .block-4, .block-5, .block-6 {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  .block-2, .block-7, .block-8 {
+    .title-block {
+      width: 80%;
+    }
+  }
+
+  .block-3, .block-5 {
+    &.animate-bg {
+      .content {
+        &:after {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+    .text-block, .slider-block {
+      width: 100%;
+      padding: 0 15px;
+    }
+    .title {
+      margin-bottom: 24px;
+    }
+    .desc {
+      width: 100%;
+      max-width: inherit;
+      margin-bottom: 24px;
+    }
+  }
+  .block-4, .block-6 {
+    .title {
+      margin-bottom: 24px;
+    }
+  }
+
+  .slick-slider {
+    max-width: 75%;
+    margin: 24px auto;
+  }
+
+  .block-4, .block-6 {
+    .row {
+      .col-md-6 {
+        &:first-child {
+          width: 45%;
+        }
+        &:last-child {
+          width: 55%;
+        }
       }
     }
   }

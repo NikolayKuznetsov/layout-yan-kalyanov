@@ -129,9 +129,6 @@
   padding-top: 90px;
   overflow: hidden;
   position: relative;
-  .title {
-    margin-bottom: 44px;
-  }
   .desc {
     margin-bottom: 50px;
     max-width: 510px;
@@ -155,9 +152,6 @@
   padding-top: 110px;
   overflow: hidden;
   position: relative;
-  .title {
-    margin-bottom: 44px;
-  }
   .desc {
     max-width: 510px;
   }
@@ -467,6 +461,18 @@
         height: 42px;
       }
     }
+  }
+  .text-block {
+    width: calc(100% - 900px);
+  }
+  .slider-block {
+    width: 900px;
+  }
+}
+
+.block-4, .block-6 {
+  .title {
+    margin-bottom: 44px;
   }
 }
 

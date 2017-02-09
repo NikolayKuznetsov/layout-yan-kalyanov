@@ -1,9 +1,13 @@
 @import "color";
 @import "mixins/mixins";
 
+.slick-slider {
+  max-width: 670px;
+}
 .slick-list {
-  height: 330px;
-  padding: 72px 0 !important;
+  height: 420px;
+  padding: 140px 0 72px !important;
+  margin-top: -60px;
 }
 
 .item-slide {
@@ -12,7 +16,7 @@
   @include transition(all 0.6s ease);
   &.slick-center {
     z-index: 2;
-    @include transform(scale(2));
+    @include transform(scale(2.25));
     @include transition(all 0.6s ease);
     img {
       @include box-shadow(12px, 0, 35px, rgba(0, 0, 0, .35));
