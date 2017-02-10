@@ -1,3 +1,6 @@
+@import "color";
+@import "mixins/mixins";
+
 @media (max-width: 1780px) {
   .block-1, .block-3, .block-4, .block-5, .block-6 {
     padding-left: 130px;
@@ -293,12 +296,145 @@
   }
 }
 
-
 @media (max-width: 860px) {
+  .menu-container {
+    width: 52px;
+    &:hover {
+      width: 52px;
+      .logo-min {
+        visibility: visible;
+        opacity: 1;
+      }
+      .logo {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+    &.open-menu {
+      width: 100%;
+      .logo-container {
+        .logo-min {
+          visibility: hidden;
+          opacity: 0;
+          @include transition(visibility .4s ease);
+          @include transition(opacity .4s ease);
+        }
+        .logo {
+          visibility: visible;
+          opacity: 1;
+          @include transition(visibility .4s ease);
+          @include transition(opacity .4s ease);
+        }
+      }
+      ul {
+        &.list-menu {
+          li {
+            &:before {
+              content: '';
+              @include absolute-center();
+              width: 48px;
+              height: 48px;
+              display: block;
+              background-color: $colorWhite;
+              z-index: -1;
+              @include border-radius(50%);
+              @include transition(background-color .4s ease);
+            }
+            &:after {
+              visibility: hidden;
+              opacity: 0;
+            }
+            &.item-menu {
+              a {
+                font-size: 19px;
+                line-height: 100%;
+                color: $colorDarkGray;
+                text-decoration: none;
+                text-transform: uppercase;
+                visibility: visible;
+                @include transition(color .4s ease .2s);
+                @include transition(visibility .4s ease .2s);
+              }
+              &.active, &:hover {
+                &:before {
+                  background-color: $colorWhiteSmoke;
+                  @include transition(background-color .4s ease);
+                }
+                a {
+                  color: $colorBlack;
+                  @include transition(color .4s ease);
+                }
+              }
+            }
+          }
+        }
+      }
+      .contact-menu {
+        background-color: $colorWhiteSmoke;
+        > * {
+          visibility: visible;
+          opacity: 1;
+          position: relative;
+          z-index: 1;
+          @include transition(visibility .4s ease);
+          @include transition(opacity .4s ease);
+        }
+        &:after {
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:before {
+          background-color: $colorWhisper;
+          content: '';
+          position: absolute;
+          width: 310px;
+          height: 310px;
+          display: block;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: -68px;
+          z-index: 0;
+          @include border-radius(50%);
+        }
+      }
+    }
+  }
+
+  .page-container {
+    padding-left: 52px;
+  }
+
+  .block-1 {
+    h2 {
+      font-size: 48px;
+      line-height: 46px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 18px;
+      margin: 0 0 10px 0;
+    }
+    .desc {
+      width: 100%;
+    }
+  }
   .block-2 {
     background-image: none;
     height: inherit;
     padding-bottom: 24px;
+    ul {
+      &.menu-section {
+        margin: 0 30px 0 20px;
+        li {
+          width: 100%;
+          a {
+            width: 100%;
+            height: 98px;
+          }
+        }
+      }
+    }
   }
 
   .block-4, .block-6 {
@@ -364,6 +500,47 @@
   .block-2, .block-7, .block-8 {
     .title-block {
       width: 100%;
+      font-size: 24px;
+      height: inherit;
+      padding: 24px 12px;
+      span {
+        margin-right: 5px;
+      }
+      .icon {
+        margin: 2px 0;
+      }
     }
   }
+
+  .block-3, .block-4, .block-5, .block-6 {
+    .title {
+      .icon-block {
+        float: none;
+      }
+      .value {
+        font-size: 24px;
+      }
+    }
+  }
+
+  form {
+    input {
+      &.submit {
+        background-image: url("../images/button-bg.png");
+        width: 235px;
+        height: 107px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .block-3, .block-5 {
+    .slider-block {
+      display: none;
+    }
+  }
+
 }
