@@ -78,4 +78,14 @@ $(document).ready(function () {
         centerMode: true,
         infinite: true
     });
+
+    $('.menu-container').click(function () {
+        console.log(111);
+        $(this).toggleClass('open-menu');
+    });
+
+    $('.menu-container a').click(function () {
+        console.log(222);
+        $(this).closest('.menu-container').toggleClass('open-menu');
+    });
 });

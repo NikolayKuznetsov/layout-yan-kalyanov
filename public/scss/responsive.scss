@@ -301,13 +301,59 @@
     width: 52px;
     &:hover {
       width: 52px;
-      .logo-min {
-        visibility: visible;
-        opacity: 1;
-      }
       .logo {
-        visibility: hidden;
-        opacity: 0;
+        .logo-min {
+          visibility: visible;
+          opacity: 1;
+        }
+        .logo {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+      ul {
+        &.list-menu {
+          li {
+            &:after {
+              visibility: visible;
+              opacity: 1;
+            }
+            &.active {
+              &:before {
+                width: 34px;
+                height: 34px;
+                background-color: $colorGhostWhite;
+              }
+            }
+            &:hover {
+              &:before {
+                width: 34px;
+                height: 34px;
+                background-color: $colorWhite;
+              }
+            }
+            &.item-menu {
+              a {
+                visibility: hidden;
+                font-size: 0;
+              }
+            }
+          }
+        }
+      }
+      .contact-menu {
+        background-color: $colorWhite;
+        > * {
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:after {
+          visibility: visible;
+          opacity: 1;
+        }
+        &:before {
+          visibility: hidden;
+        }
       }
     }
     &.open-menu {
